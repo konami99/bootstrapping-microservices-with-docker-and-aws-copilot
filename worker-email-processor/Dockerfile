@@ -15,10 +15,10 @@ RUN go mod download
 COPY *.go ./
 
 # compile application
-RUN go build -o /godocker
+RUN go build -o /emailProcessor
  
 # tells Docker that the container listens on specified network ports at runtime
 # EXPOSE 8080
 
 # command to be used to execute when the image is used to start a container
-CMD [ "/godocker" ]
+CMD [ "/emailProcessor" ]
