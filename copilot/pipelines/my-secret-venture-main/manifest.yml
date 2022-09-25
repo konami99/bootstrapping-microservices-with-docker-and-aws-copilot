@@ -15,7 +15,7 @@ source:
   provider: GitHub
   # Additional properties that further specify the location of the artifacts.
   properties:
-    branch: ch-3
+    branch: ch-4
     repository: https://github.com/konami99/bootstrapping-microservices-with-docker-and-aws-copilot
     # Optional: specify the name of an existing CodeStar Connections connection.
     # connection_name: a-connection
