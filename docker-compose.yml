@@ -10,6 +10,8 @@ services:
       - /src/node_modules
     build:
       context: ./express/
+    environment: 
+      - NODE_ENV=dev
     command: npm run dev
   dynamodb-local:
     command: "-jar DynamoDBLocal.jar -sharedDb -dbPath ./data"
