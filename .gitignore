@@ -127,3 +127,5 @@ dist
 .pnp.*
 
 dynamodb-volume
+
+nextjs/.env
