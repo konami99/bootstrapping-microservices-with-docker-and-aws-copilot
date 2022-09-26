@@ -7,7 +7,7 @@ export async function emailHandler(
 ) {
   const client = new SNSClient({
     region: "us-west-2",
-    endpoint: process.env.NODE_ENV === 'dev' ? process.env.SNS_TOPIC_ENDPOINT : null,
+    endpoint: process.env.NODE_ENV === 'dev' ? process.env.SNS_TOPIC_ENDPOINT : undefined,
   });
 
   const { emailEvents } = JSON.parse(process.env.COPILOT_SNS_TOPIC_ARNS as string);
